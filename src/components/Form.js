@@ -20,14 +20,14 @@ export default function Form({ input, setInput, todos, setTodos }) {
       <form className="todo-form" autoComplete="off">
         <input
           type="text"
-          placeholder="Add a todo"
+          placeholder="Add a task"
           name="text"
           className="todo-input"
           value={input}
           onChange={handleChange}
         />
         <button className="todo-button" onClick={handleSubmit}>
-          Add todo
+          Add
         </button>
       </form>
     </>

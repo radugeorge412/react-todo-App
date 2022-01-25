@@ -5,6 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
+
   
   body {
     background: linear-gradient(
@@ -26,17 +27,20 @@
     padding-bottom: 32px;
     padding-top: 32px;
   }
+  ul{
+   list-style-type: none;
+  }
   
   h1 {
-    margin: 32px 0;
+    margin: 25px 0;
     color: #fff;
     font-size: 24px;
   }
   
   
-  
   .todo-form {
     margin-bottom: 32px;
+    font-size: 14px;
   }
   
   .todo-input {
@@ -45,6 +49,7 @@
     border: 2px solid #5d0cff;
     outline: none;
     width: 320px;
+    font-size:14px;
     background: transparent;
     color: #fff;
   }
@@ -103,11 +108,13 @@
     border-radius: 5px;
     width: 90%;
   }
-  .complete {
+  .completed {
     text-decoration: line-through;
-    opacity: 0.1;
-    background-color:red;
+    opacity: 0.4;
+   
   }
+
+  
   
   .todo-row:nth-child(4n + 1) {
     background: linear-gradient(
@@ -147,4 +154,19 @@
   
   .edit-icon {
     color: #fff;
+  }
+
+  .done-icon{
+    color:#fff;
+    margin-right:5px;
+  }
+
+  @media screen and (max-width:500px)
+  {
+    .todo-app{
+      margin:50px auto;
+      width:100%;
+    }
+    
+    
   }
